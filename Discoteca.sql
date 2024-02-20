@@ -283,8 +283,6 @@ INSERT INTO musica
     
 /*Pronto, após esse insert realize o select abaixo para visualizar o tempo da musica sendo atualizado*/
 
-SELECT id_disco, SUM(tempo_musica) AS tempo_total
-FROM musica
-GROUP BY id_disco;
-
+SELECT titulo_disco, tempo_disco
+from disco;
 
